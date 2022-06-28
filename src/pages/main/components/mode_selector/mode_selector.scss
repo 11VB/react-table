@@ -1,0 +1,13 @@
+@import "../../../../scss/colors.scss";
+@import "../../../../scss/spaces.scss";
+@import "../../../../scss/mixins.scss";
+
+#mode-selector {
+    display: flex;
+    justify-content: center;
+    padding: $space-medium 0;
+
+    button {
+        @include btn;
+    }
+}

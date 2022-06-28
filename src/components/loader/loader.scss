@@ -1,0 +1,39 @@
+@import "../../scss/colors.scss";
+@import "../../scss/spaces.scss";
+
+.loader-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $space-medium;
+
+  .loader-dual-ring {
+    display: inline-block;
+    width: $space-small + $space-medium;
+    height: $space-small + $space-medium;
+  
+    &::after {
+      content: " ";
+      display: block;
+      width: $space-medium;
+      height: $space-medium;
+      margin: $space-small/2;
+      border: $space-small/2 solid $blue;
+      border-radius: 50%;
+      border-color: $blue transparent $blue transparent;
+      animation: loader-dual-ring 1.2s linear infinite;
+    }
+  }
+}
+
+@keyframes loader-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+

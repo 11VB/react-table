@@ -1,0 +1,11 @@
+@mixin btn {
+    border: 1px solid $grey2;
+    background: $white;
+    color: $blue;
+    margin-right: $space-small;
+
+    &:hover {
+        background: $grey;
+        color: $blue;
+    }
+}

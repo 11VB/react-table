@@ -1,0 +1,13 @@
+@import "../../../../scss/colors.scss";
+@import "../../../../scss/spaces.scss";
+@import "../../../../scss/mixins.scss";
+
+.input-group {
+        button {
+            @include btn;
+        }
+
+        input {
+            border-radius: $space-small/4;
+        }
+}
