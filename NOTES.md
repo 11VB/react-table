@@ -6,3 +6,5 @@ Ideally, a standalone page for users' details can be created, and its router add
 
 You can see 'components' folders in src folder and on page level. In src those are components that can be shared, like loader. On page level those are the components used on that page only.
 There is a space for improvement, e.g., button can be transformed into reusable and customizable component.
+
+I haven't worked on responsiveness, so UI also needs improvements.
